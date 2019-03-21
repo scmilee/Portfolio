@@ -17,6 +17,12 @@ module.exports = {
         path: `${__dirname}/src/images/`,
         name: 'images',
       },
+    }, 
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+          bucketName: 'dylandrudgeportfolio'
+      },
     },
     {
       resolve: 'gatsby-plugin-google-analytics',
@@ -52,6 +58,5 @@ module.exports = {
     },
     /* Must be placed at the end */
     'gatsby-plugin-offline',
-    'gatsby-plugin-netlify',
   ],
 }
